@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Já vi esse?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="menu">
+        <a href="#inicio">Início</a>
+        <a href="#destaque">Destaque</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#favoritos">Favoritos</a>
+        <a href="#lancamentos">Lançamentos</a>
+        <a href="#generos">Gêneros</a>
+        <a href="#sobre">Sobre</a>
+    </nav>
+    <header class="banner" id="inicio">
+            <div class="tira"></div>
+            <h1>JÁ VI ESSE?</h1>
+            <h2>Catálogo de filmes: assista e avalie.</h2>
+            <div class="tira"></div>
+    </header>
+
+    <section class="destaque" id="destaque">
+  <h2 class="destaque-titulo">Destaque da Semana</h2>
+
+  <div class="destaque-card">
+    <img src="assets/homemaranha.webp" alt="Pôster de Homem-Aranha: Um Novo Dia">
+
+    <div class="destaque-texto">
+      <h3>Homem-Aranha: Um Novo Dia</h3>
+      <p class="destaque-sinopse">A história acompanha Peter Parker depois dos eventos de Sem Volta Para Casa, quando toda a humanidade esqueceu sua identidade. Agora vivendo em Nova York como um indivíduo anônimo, ele tenta equilibrar a rotina universitária com a vida de super-herói, tudo isso sem amigos, sem apoio e sem ser reconhecido por ninguém.</p>
+      <ul class="destaque-generos">
+        <li>Ação</li>
+        <li>Aventura</li>
+        <li>Ficção</li>
+      </ul>
+        <p class="destaque-detalhes">2026 · 2h 25min · Nota 8,0</p>
+    </div>
+ </div>
+    </section>
+
+  <div class="catalogo-topo">
+    <h2 class="catalogo-titulo">Catálogo</h2>
+    <p class="catalogo-contador">Exibindo <span id="contador">0</span> filmes</p>
+
+    <div class="catalogo-controles">
+    <input type="text" id="busca" placeholder="Buscar filme...">
+
+    <select id="filtro-genero">
+      <option value="todos">Todos</option>
+      <option value="Ação">Ação</option>
+      <option value="Animação">Animação</option>
+      <option value="Aventura">Aventura</option>
+      <option value="Comédia">Comédia</option>
+      <option value="Drama">Drama</option>
+      <option value="Fantasia">Fantasia</option>
+      <option value="Ficção">Ficção</option>
+      <option value="História">História</option>
+      <option value="Mistério">Mistério</option>
+      <option value="Suspense">Suspense</option>
+      <option value="Suspense Psicológico">Suspense Psicológico</option>
+      <option value="Terror">Terror</option>
+      <option value="Thriller">Thriller</option>
+    </select>
+
+    <button id="btn-inverter">Inverter ordem</button>
+  </div>
+</div>
+
+<section id="catalogo"></section>
+
+  
+<section class="favoritos" id="favoritos">
+  <h2 class="favoritos-titulo">Favoritos (<span id="contador-favoritos">0</span>)</h2>
+  <ul id="lista-favoritos"></ul>
+  <button id="btn-limpar">Limpar favoritos</button>
+</section>
+
+
+    <section class="lancamentos" id="lancamentos">
+  <h2 class="lancamentos-titulo">Lançamentos e Prêmios</h2>
+
+  <table class="tabela">
+      <tr>
+        <th>Filme</th>
+        <th>Ano</th>
+        <th>Nota</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>Homem-Aranha: Um Novo Dia</td>
+        <td>2026</td>
+        <td>8,0</td>
+        <td>Lançamento</td>
+      </tr>
+      <tr>
+        <td>Matrix</td>
+        <td>1999</td>
+        <td>8,7</td>
+        <td>Premiado</td>
+      </tr>
+      <tr>
+        <td>Viva: A Vida é uma Festa</td>
+        <td>2017</td>
+        <td>7,4</td>
+        <td>Premiado</td>
+      </tr>
+      <tr>
+        <td>Como Treinar o seu Dragão</td>
+        <td>2010</td>
+        <td>7,3</td>
+        <td>Indicado</td>
+      </tr>
+      <tr>
+        <td>Vingadores: Ultimato</td>
+        <td>2019</td>
+        <td>8,4</td>
+        <td>Indicado</td>
+      </tr>
+      <tr>
+        <td>Corra!</td>
+        <td>2017</td>
+        <td>7,8</td>
+        <td>Premiado</td>
+      </tr>
+      <tr>
+        <td>Ilha do Medo</td>
+        <td>2010</td>
+        <td>7,2</td>
+        <td>Admirado</td>
+      </tr>
+      <tr>
+        <td>Oppenheimer</td>
+        <td>2023</td>
+        <td>8,3</td>
+        <td>Premiado</td>
+      </tr>
+  </table>
+</section>
+    <section class="generos" id="generos">
+  <h2 class="generos-titulo">Gêneros</h2>
+
+  <div class="generos-caixa">
+    <ul class="lista-quadrado">
+      <li>Ação</li>
+      <li>Comédia</li>
+      <li>Ficção</li>
+      <li>Terror</li>
+      <li>Drama</li>
+      <li>Mistério</li>
+    </ul>
+
+    <ul class="lista-bolinha">
+      <li>Animação</li>
+      <li>Thriller</li>
+      <li>Fantasia</li>
+      <li>Suspense</li>
+      <li>Suspense Psicológico</li>
+      <li>História</li>
+    </ul>
+  </div>
+</section>
+    <section class="sobre" id="sobre">
+  <h2 class="sobre-titulo">Sobre e Contato</h2>
+
+  <div class="sobre-caixa">
+    <img src="assets/logouneb.png" alt="Logo da UNEB" class="sobre-imagem">
+    <p>
+      Este é um site sobre catálogo de filmes, desenvolvido no intuito de aprimorar e ganhar conhecimento nas ferramentas: HTML, CSS e JavaScript.
+    </p>
+  </div>
+
+  <div class="sobre-redes">
+    <a href="https://instagram.com/isaac010._" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <a href="https://github.com/isaacsantanapessoa" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="https://www.linkedin.com/in/isaac-santana-pessoa-a772a6400/?isSelfProfile=true" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

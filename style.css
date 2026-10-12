@@ -1,0 +1,507 @@
+/*Estilização referente ao plano de fundo do site*/
+body {
+  margin: 0;
+  background-color: #0F172A;
+  font-family: 'DM Sans', sans-serif;
+  color: #F1F5F9;
+}
+/*Background do título e subtítulo do catálogo*/
+.banner {
+    background-color: #2A1B4D;
+    border: 1px solid #4C2F8A;
+    border-radius: 12px;
+    padding: 64px 56px;
+    margin: 40px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    
+}
+/*Card relacionado ao nome do catálogo*/
+.banner h1 {
+  font-family: 'Bebas Neue', Impact, sans-serif;
+  font-size: 104px;
+  letter-spacing: 4px;
+  line-height: 1;
+  margin: 0;
+  color: rgb(168, 85, 247);               
+  text-shadow: 4px 4px 0 rgb(15, 23, 42); 
+}
+/* Subtitulo abaixo do nome do catálogo*/
+.banner h2 {
+  font-size: 24px;
+  font-weight: 400;
+  font-style: italic;
+  color: #F1F5F9;
+  margin: 0;
+}
+/* Tiras de rolo de filme (os quadradinhos) */
+.tira {
+  height: 14px;
+  background: repeating-linear-gradient(
+    90deg,
+    #0F172A 0 18px,
+    transparent 18px 36px
+  );
+  opacity: 0.7;
+}
+/*Serve para afastar o conteúdo da seção das bordas da tela*/
+.destaque {
+  padding: 0 80px;
+}
+/*Estilização do nome "destaque da semana"*/
+.destaque-titulo {
+  margin: 0 0 20px;
+  font-family: 'Bebas Neue', Impact, sans-serif;
+  font-size: 36px;
+  letter-spacing: 1px;
+  color: #F1F5F9;
+}
+/*Estilização do card do destaque*/
+.destaque-card {
+  display: flex;
+  gap: 32px;
+  padding: 28px;
+  background-color: #1B2437;
+  border: 2px solid #A855F7;
+  border-radius: 14px;
+}
+/*Formatação da imagem relacionada ao card*/
+.destaque-card img {
+  width: 240px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+/*É a classe que agrupa todo o texto do card*/
+.destaque-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+/*Estilização do nome do filme*/
+.destaque-texto h3 {
+  margin: 0;
+  font-size: 34px;
+  color: #F1F5F9;
+}
+/*Estilização da sinopse do filme*/
+.destaque-sinopse {
+  margin: 0;
+  max-width: 560px;
+  line-height: 1.6;
+  color: #CBD5E1;
+}
+/*Estilização dos ícone dos gêneros do filme*/
+.destaque-generos {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*Estilização do texto dos gêneros do filme*/
+.destaque-generos li {
+  padding: 5px 14px;
+  border: 1px solid #A855F7;
+  border-radius: 999px;
+  font-size: 12px;
+  color: #A855F7;
+}
+/*Estilização do ano de lançamento, nota e duração do filme */
+.destaque-detalhes {
+  margin: 0;
+  font-size: 14px;
+  color: #94A3B8;
+}
+
+/*Título da seção*/
+.catalogo-titulo {
+  margin: 56px 0 20px;
+  font-family: 'Bebas Neue', Impact, sans-serif;
+  font-size: 36px;
+  letter-spacing: 1px;
+  color: #F1F5F9;
+}
+.catalogo-topo {
+  padding: 56px 80px 0;
+}
+
+.catalogo-contador {
+  margin: 0;
+  color: #94A3B8;
+}
+
+#catalogo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 20px 80px 0;
+  margin-bottom: 56px;
+  scroll-margin-top: 100px;   /* o menu mostra o título ao rolar */
+}
+
+/* selo Recomendado */
+.selo {
+  align-self: flex-start;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background-color: #A855F7;
+  color: #0F172A;
+  font-size: 12px;
+  font-weight: 600;
+}
+/*Estilização do card do catálogo*/
+.catalogo-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+  padding: 14px;
+  background-color: #1B2437;
+  border: 1px solid #2f3a57;
+  border-radius: 12px;
+}
+/*Formatação da imagem relacionada ao card*/
+.catalogo-card img {
+  width: 100%;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Nome do filme contendo o link */
+.catalogo-card h3 {
+  margin: 4px 0 0;
+  font-size: 17px;
+}
+
+.catalogo-card h3 a {
+  color: #A855F7;
+  text-decoration: none;
+}
+
+.catalogo-card h3 a:hover,
+.catalogo-card h3 a:focus {
+  text-decoration: underline;
+}
+
+/*Estilização dos ícone dos gêneros do filme*/
+.catalogo-generos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*Estilização do texto dos gêneros do filme*/
+.catalogo-generos li {
+  padding: 4px 12px;
+  border: 1px solid #A855F7;
+  border-radius: 999px;
+  font-size: 12px;
+  color: #A855F7;
+}
+
+/* Cabeçalho destacado */
+.tabela th {
+  padding: 14px 18px;
+  text-align: left;
+  background-color: #A855F7;
+  color: #0F172A;
+  border: 1px solid #2F3A57;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Células */
+.tabela td {
+  padding: 14px 18px;
+  border: 1px solid #2F3A57;
+}
+
+.lancamentos {
+  padding: 0 80px;
+  margin-bottom: 56px;
+}
+
+.lancamentos-titulo {
+  margin: 56px 0 20px;
+  font-family: 'Bebas Neue', Impact, sans-serif;
+  font-size: 36px;
+  letter-spacing: 1px;
+  color: #F1F5F9;
+}
+
+/* Tabela */
+.tabela {
+  width: 100%;
+  border-collapse: collapse;   /* junta as bordas das células */
+  font-size: 15px;
+  color: #F1F5F9;
+}
+
+/* Cabeçalho destacado */
+.tabela th {
+  padding: 14px 18px;
+  text-align: left;
+  background-color: #A855F7;
+  color: #0F172A;
+  border: 1px solid #2F3A57;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Partes da tabela */
+.tabela td {
+  padding: 14px 18px;
+  border: 1px solid #2F3A57;
+}
+
+/* Linhas alternadas */
+.tabela tbody tr:nth-child(even) {
+  background-color: #232D45;
+}
+
+.tabela tbody tr:nth-child(odd) {
+  background-color: #1B2437;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 18px 80px;
+  background-color: #0B1120;
+  border-bottom: 1px solid #232D45;
+}
+
+.menu a {
+  color: #F1F5F9;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 6px 2px;
+}
+
+.menu a:hover,
+.menu a:focus {
+  color: #A855F7;
+  border-bottom: 2px solid #A855F7;
+}
+.generos {
+  padding: 0 80px;
+  margin-bottom: 56px;
+}
+
+.generos-titulo {
+  margin: 56px 0 20px;
+  font-family: 'Bebas Neue', Impact, sans-serif;
+  font-size: 36px;
+  letter-spacing: 1px;
+  color: #F1F5F9;
+}
+
+.generos-caixa {
+  display: flex;
+  gap: 80px;
+  padding: 24px 32px;
+  background-color: #1B2437;
+  border: 1px solid #2F3A57;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #F1F5F9;
+}
+
+.lista-quadrado {
+  list-style-type: square;   
+  color: #A855F7;            
+}
+
+.lista-bolinha {
+  list-style-type: disc;
+  color: #A855F7;
+}
+
+.generos-caixa li {
+  padding: 4px 0;
+}
+.sobre {
+  padding: 0 80px;
+  margin-bottom: 56px;
+}
+
+.sobre-titulo {
+  margin: 56px 0 20px;
+  font-family: 'Bebas Neue', Impact, sans-serif;
+  font-size: 36px;
+  letter-spacing: 1px;
+  color: #F1F5F9;
+}
+
+/* Caixa do parágrafo */
+.sobre-caixa {
+  display: flow-root;          
+  padding: 28px;
+  background-color: #1B2437;
+  border: 1px solid #2F3A57;
+  border-radius: 10px;
+}
+
+/* Imagem pequena flutuando à direita */
+.sobre-imagem {
+  float: right;                
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  margin: 0 0 12px 24px;       
+  border: 3px solid #A855F7;
+  border-radius: 50%;
+}
+
+.sobre-caixa p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #CBD5E1;
+}
+
+/* Links das redes sociais */
+.sobre-redes {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.sobre-redes a {
+  padding: 10px 18px;
+  border: 1px solid #44507A;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #F1F5F9;
+  text-decoration: none;
+}
+
+.sobre-redes a:hover,
+.sobre-redes a:focus {
+  background-color: #A855F7;
+  border-color: #A855F7;
+  color: #0F172A;
+  outline: none;
+}
+.sem-resultado {
+  margin: 0;
+  grid-column: 1/-1;
+  font-size: 18px;
+  color: #94A3B8;
+}
+.catalogo-controles {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+#busca,
+#filtro-genero {
+  padding: 12px 16px;
+  background-color: #1B2437;
+  border: 1px solid #2F3A57;
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  color: #F1F5F9;
+}
+
+#busca {
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+#busca:focus,
+#filtro-genero:focus {
+  outline: none;
+  border-color: #A855F7;
+}
+#btn-inverter, #btn-limpar {
+  padding: 12px 20px;
+  background-color: #A855F7;
+  border: none;
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #0F172A;
+  cursor: pointer;
+}
+#btn-inverter:hover,
+#btn-inverter:focus {
+  background-color: #C084FC;
+  outline: none;
+}
+.btn-favoritar {
+  margin-top: auto;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #A855F7;
+  border-radius: 6px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: #A855F7;
+  cursor: pointer;
+}
+
+.btn-favoritar:hover,
+.btn-favoritar:focus {
+  background-color: #A855F7;
+  color: #0F172A;
+  outline: none;
+}
+
+.favoritos {
+  padding: 0 80px;
+  margin-bottom: 56px;
+}
+
+.favoritos-titulo {
+  margin: 56px 0 20px;
+  font-family: 'Bebas Neue', Impact, sans-serif;
+  font-size: 36px;
+  letter-spacing: 1px;
+  color: #F1F5F9;
+}
+
+#lista-favoritos {
+  margin: 0 0 20px;
+  padding-left: 24px;
+  list-style-type: square;
+  color: #A855F7;
+}
+
+#lista-favoritos li {
+  padding: 4px 0;
+  color: #F1F5F9;
+}
+.catalogo-titulo,
+.destaque-titulo {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+@media (max-width: 900px) {
+  #catalogo { grid-template-columns: repeat(2, 1fr); }
+  .destaque-card { flex-direction: column; }
+  .banner h1 { font-size: 56px; }
+  .destaque, .catalogo-topo, #catalogo, .lancamentos,
+  .generos, .sobre, .favoritos { padding-left: 24px; padding-right: 24px; }
+}
