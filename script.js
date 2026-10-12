@@ -6,7 +6,7 @@ let filmes = [
     { titulo: "Vingadores: Ultimato", ano: 2019, genero: ["Ficção","Ação","Aventura"], nota: 8.4, poster: "assets/ultimato.jpeg", link:"https://www.disneyplus.com/pt-br/browse/entity-b39aa962-be56-4b09-a536-98617031717f" },
     { titulo: "Corra!", ano: 2017, genero: ["Terror","Suspense Psicológico"], nota: 7.8, poster: "assets/corrafilme.jpeg", link:"https://www.primevideo.com/-/pt/detail/0I9VQV8TPDEL2MLX080A1JKN6X/" },
     { titulo: "Ilha do Medo", ano: 2010, genero: ["Suspense Psicológico","Mistério","Thriller"], nota: 7.2, poster: "assets/ilhadomedo.jpeg", link:"https://www.primevideo.com/-/pt/detail/0INICTQA9DNNLBC8H72QO0J3NZ" },
-    { titulo: "Oppenheimer", ano: 2023, genero: ["Suspense","História","Drama"], nota: 8.3, poster: "assets/oppenheimer.jpeg", link:"https://www.primevideo.com/-/pt/detail/0TQ0HYSFFKAO9W3UUIOMSTPUJ7/" },
+    { titulo: "Oppenheimer", ano: 2023, genero: ["Suspense","História","Drama"], nota: 8.3, poster: "assets/oppenheimer.jpeg", link:"https://www.primevideo.com/-/pt/detail/0TQ0HYSFFKAO9W3UUIOMSTPUJ7/" }
 ];
 
 function mostrarFilmes(lista) {
